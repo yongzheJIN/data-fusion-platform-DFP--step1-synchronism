@@ -20,9 +20,17 @@ conf/example/instance.prperties</br>
 
 ## 3:配置canal_adopter(消息消费端)</br>
 conf/application.yml</br>
+![image](https://user-images.githubusercontent.com/52804241/127944205-d14e560e-37c7-45c8-a732-4ee465635fd9.png)</br>
 conf/rdb/test.yml</br>
-这里的内容有点复杂，可以下载我的代码自己看一下这两个文档，不懂的可以后续询问</br>
+![image](https://user-images.githubusercontent.com/52804241/127944373-04071cae-f889-4e60-bda7-60e58b0f10a3.png)</br>
+这里的内容有点复杂，我只能写一些注解大致讲解一下，有问题的留言。
 
+大家可以下载我的代码自己看一下这两个文档，不懂的可以后续询问</br>
+
+## 4:启动服务
+\canal-realtime_catch_data-\canal_deployer\bin\startup.bat</br>
+\canal-realtime_catch_data-\canla_adopter\bin\startup.bat</br>
+可以进入 \canal-realtime_catch_data-\canla_adopter\logs\adapter\adapter.log查看运行过程是否报错。</br>
 <hr>
 这里只讲解简单的同步配置，如果有其他需求请告知我会持续更新。</br>
 
