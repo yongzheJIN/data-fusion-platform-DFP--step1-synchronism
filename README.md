@@ -33,5 +33,10 @@ conf/rdb/test.yml</br>
 可以进入 \canal-realtime_catch_data-\canla_adopter\logs\adapter\adapter.log查看运行过程是否报错。</br>
 <hr>
 这里只讲解简单的同步配置，如果有其他需求请告知我会持续更新。</br>
+在这里我们实现了mysql的实时同步，后续我会推出利用kafka实现异构数据的融合</br>
+最终框架有两套，上述是简单的一套 canal_server->canal_adopter</br>
+mysql-binlog>canal_server>canal_adopter</br>
+mysql-binlog>canal_server>kafka>kettle</br>
+利用这两套工具可实现多源异构数据库的融合，且学习成本较低，第二套将会在后续推出。</br>
 
 ## 声明本人只是通过整合不同框架为大家提供一套适合异构数据的融合的框架，如有侵权请告知。
