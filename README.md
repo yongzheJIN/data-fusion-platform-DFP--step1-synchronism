@@ -7,8 +7,9 @@
 本文档讲解的是通过使用canal-server和canal deployer实现了mysql到mysql的实时映射同步，原理是利用mysql的binlog的书写，来记录文档的操作，canal模拟为slave来记载mysql的操作，然后通过adopter来完成数据的同步。
 ## 1：开启mysql的binlog
 找到mysql的配置文件my.ini配置
-log_bin = mysql_bin
-binlog-format = Row
+log-bin=mysql-bin# 开启 binlog</br>
+binlog-format=ROW# 选择 ROW 模式</br>
+server_id=1</br>
 #### row是一种特殊格式，这里千万不要写成mixed和statement，具体原因可去查binlog模式的不同
 ## 2: 配置canal_server
 canal中有两个文件是需要人为去配置的，这里我们针对canal自带的adopter来配置（也支持自己编写java程序以及使用kafka消费信息【依赖Kafka的ETL消费进程会在后期推出】）</br>
