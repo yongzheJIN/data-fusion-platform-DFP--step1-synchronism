@@ -1,4 +1,4 @@
-# canal.adopter
+# canal.adepter
 ### realtime-mysql-fusion-and-synchronization-step1
 本文档针对的是windows系统。（linux系统也是可以，如果有需要的朋友可以留言）
 实例代码会在后续补上
